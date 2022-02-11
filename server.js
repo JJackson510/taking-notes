@@ -9,6 +9,8 @@ app.use(express.static('public'));
 app.use(express.urlencoded({extensions: true}));
 app.use(express.json());
 
+app.use(express.static('./public'));
+
 
 
 app.listen(port, () => {
